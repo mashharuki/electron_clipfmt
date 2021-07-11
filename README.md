@@ -1,0 +1,2 @@
+# electron_clipfmt
+Electronを利用したクリップボードアプリケーション用のリポジトリです。
