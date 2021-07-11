@@ -32,7 +32,7 @@ module.exports = {
     path: path.join(__dirname, 'out'),
     filename: '[name].js'
   },
-  devtool: 'cheap-module-eval-source-map',
+  devtool: false,
   target: 'node',
   module: {
     rules: [
@@ -41,6 +41,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
+          sourceMap: true,
           presets: ['es2015', 'react']
         }
       }
